@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* dark color  */
+  --dark-color: #081c15;
+  --background-color: #ffffff;
+  --background-light: #ececec;
+  --text-light: #777373;
+  --tiny-heading: 0.9rem;
+  --sm-heading: 1rem;
+  --md-heading: 1.5rem;
+  --lg-heading: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--background-color);
+  color: var(--dark-color);
+  line-height: 1.5;
+  font-size: 0.9em;
+  font-weight: 500 !important;
+}
+
+.tiny-heading {
+  font-size: var(--tiny-heading);
+}
+
+.sm-heading {
+  font-size: var(--sm-heading);
+}
+
+.md-heading {
+  font-size: var(--md-heading);
+}
+
+.lg-heading {
+  font-size: var(--lg-heading);
+  font-weight: 700 !important;
+}
+
+nav {
+  /* soft box-shadow */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.btn {
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link a {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+
+  text-decoration: none;
+  border-radius: 50rem;
+}
+
+.nav-link a:hover {
+  color: var(--background-color);
+  background-color: var(--dark-color);
+}
+
+.primary-btn {
+  color: var(--background-color);
+  background-color: var(--dark-color);
+  font-weight: 500 !important;
+}
+
+.ham-menu {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  /* no scroll bar */
+  overflow: hidden;
+
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.ham-menu-links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-slider {
+  margin: 6.5rem auto;
+  position: relative;
+}
+
+.paragraph-text {
+  color: var(--text-light);
+}
+
+.bold-font {
+  font-weight: 700 !important;
+}
+
+.sm-heading {
+  font-size: 0.9rem;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slide {
+  border-radius: 1.5rem;
+  background-image: url("https://assets.website-files.com/64343e4cc1aec6287d05a6e4/64354f7c5efcf20642d3bf47_thisisengineering-raeng-IpTPp_aPbYE-unsplash%201%20(1).webp");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 3rem;
+  /* display: none; */
+}
+
+.slide h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--background-color);
+  /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.slide p {
+  /* font-size: 1.5rem; */
+  font-weight: 500;
+  color: #b8b8b8;
+  /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+.slide button {
+  font-weight: 500 !important;
+}
+
+.slider-navigation {
+  position: absolute;
+  left: -0.3rem;
+  right: -0.3rem;
+  /* center vertically  */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-navigation button {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--background-light);
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.slider-navigation button:hover {
+  background-color: var(--background-light);
+}
+
+.slider-navigation button:active {
+  background-color: var(--background-light) !important;
+  transform: scale(0.9);
+}
+
+.service-room {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+  background-color: var(--background-light);
+  border-radius: 1rem;
+}
+
+.icon-wrapper {
+  height: 2.5rem;
+  width: 2.5rem;
+  /* border: 1px solid black; */
+}
+
+.popular-section {
+  margin: 6.5rem auto;
+}
+
+.popular-items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* change background color of 1st child of popular-section */
+.popular-items > div:first-child {
+  background-color: #9ef1d8;
+}
+
+.popular-items > div:nth-child(2) {
+  background-color: #c5eeff;
+}
+
+.popular-items > div:nth-child(3) {
+  background-color: #eff09c;
+}
+
+.popular-items > div:nth-child(4) {
+  background-color: #ffb6b6;
+}
+
+.popular-item {
+  border-radius: 1.5rem;
+}
+
+.popular-item > button {
+  border: none;
+  box-shadow: 0 0 0 2px transparent !important;
+  outline: 2.5px dotted var(--dark-color) !important;
+  font-weight: 700;
+}
