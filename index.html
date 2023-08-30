@@ -29,7 +29,7 @@
     <nav class="navbar fixed-top py-3">
       <div class="container d-flex align-items-center justify-content-between">
         <a href="index.html" class="text-decoration-none text-dark">
-          <h5 class="m-0 p-0">XP</h5>
+          <h5 class="bold-text m-0 p-0">XP</h5>
         </a>
         <ul
           class="nav-links m-0 p-0 d-none d-sm-none d-md-none d-lg-block d-xl-block"
@@ -87,53 +87,65 @@
     </nav>
 
     <section class="hero-slider container">
-      <div class="slider d-flex">
-        <div
-          class="slide col-12 d-flex flex-column gap-3 align-items-start active"
-        >
-          <h1 class="col-12 col-md-8 col-lg-6 col-xl-4">
-            EHSERVING CUSTOMER SINCE 2010
-          </h1>
-          <p class="col-12 col-md-8 col-lg-6 col-xl-5">
-            We offer tips and advice on how to maintain your devices for optimal
-            performance. We understand that prevention is better than cure, and
-            we are committed to helping you get the most out of your devices. We
-            offer tips and advice on how to maintain your devices for optimal
-            performance. We understand that.
-          </p>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="slide-section col-12 d-flex flex-column gap-3 align-items-start"
+            >
+              <h1 class="col-12 col-md-8 col-lg-6 col-xl-4">
+                SERVING CUSTOMER SINCE 2010
+              </h1>
+              <p class="col-12 col-md-8 col-lg-6 col-xl-5">
+                We offer tips and advice on how to maintain your devices for
+                optimal performance. We understand that prevention is better
+                than cure, and we are committed to helping you get the most out
+                of your devices. We offer tips and advice on how to maintain
+                your devices for optimal performance. We understand that.
+              </p>
 
-          <div class="slider-ctas d-flex gap-3">
-            <button class="btn btn-light rounded-pill mt-4">
-              Book a Quote
-            </button>
-            <button class="btn btn-outline-light rounded-pill mt-4">
-              About Us
-            </button>
+              <div class="slider-ctas d-flex gap-3">
+                <button class="btn btn-light rounded-pill mt-4">
+                  Book a Quote
+                </button>
+                <button class="btn btn-outline-light rounded-pill mt-4">
+                  About Us
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="slide d-flex col-12 flex-column gap-3 align-items-start">
-          <h1 class="col-12 col-md-8 col-lg-6 col-xl-4">
-            Fucking CUSTOMER SINCE 2010
-          </h1>
-          <p class="col-12 col-md-8 col-lg-6 col-xl-5">
-            We offer tips and advice on how to maintain your devices for optimal
-            performance. We understand that prevention is better than cure, and
-            we are committed to helping you get the most out of your devices. We
-            offer tips and advice on how to maintain your devices for optimal
-            performance. We understand that.
-          </p>
+          <div class="carousel-item active">
+            <div
+              class="slide-section col-12 d-flex flex-column gap-3 align-items-start"
+            >
+              <h1 class="col-12 col-md-8 col-lg-6 col-xl-4">
+                SERVING CUSTOMER SINCE 2010
+              </h1>
+              <p class="col-12 col-md-8 col-lg-6 col-xl-5">
+                We offer tips and advice on how to maintain your devices for
+                optimal performance. We understand that prevention is better
+                than cure, and we are committed to helping you get the most out
+                of your devices. We offer tips and advice on how to maintain
+                your devices for optimal performance. We understand that.
+              </p>
 
-          <div class="slider-ctas d-flex gap-3">
-            <button class="btn btn-light rounded-pill mt-4">
-              Book a Quote
-            </button>
-            <button class="btn btn-outline-light rounded-pill mt-4">
-              About Us
-            </button>
+              <div class="slider-ctas d-flex gap-3">
+                <button class="btn btn-light rounded-pill mt-4">
+                  Book a Quote
+                </button>
+                <button class="btn btn-outline-light rounded-pill mt-4">
+                  About Us
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div class="slider-navigation d-flex justify-content-between">
-          <button class="left-btn">
+          <button
+            class="left-btn"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
             <svg
               width="24"
               height="24"
@@ -149,7 +161,11 @@
               />
             </svg>
           </button>
-          <button class="right-btn">
+          <button
+            class="right-btn"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
             <svg
               width="24"
               height="24"
@@ -175,8 +191,8 @@
           <img src="./assets/Mobile.svg" alt="" />
         </div>
         <div class="service-info">
-          <h6 class="bold-font sm-heading">Mobile Repair</h6>
-          <p class="paragraph-text">
+          <h6 class="bold-text sm-heading">Mobile Repair</h6>
+          <p class="light-text tiny-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             adipisicing elit
           </p>
@@ -190,8 +206,8 @@
           <img src="./assets/laptop.svg" alt="" />
         </div>
         <div class="service-info">
-          <h6 class="bold-font sm-heading">Laptop Repair</h6>
-          <p class="paragraph-text">
+          <h6 class="bold-text sm-heading">Laptop Repair</h6>
+          <p class="light-text tiny-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             adipisicing elit
           </p>
@@ -205,8 +221,8 @@
           <img src="./assets/tablet.svg" alt="" class="" />
         </div>
         <div class="service-info">
-          <h6 class="bold-font sm-heading">Tablet Repair Repair</h6>
-          <p class="paragraph-text">
+          <h6 class="bold-text sm-heading">Tablet Repair Repair</h6>
+          <p class="light-text tiny-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             adipisicing elit
           </p>
@@ -220,8 +236,8 @@
           <img src="./assets/data.svg" alt="" class="" />
         </div>
         <div class="service-info">
-          <h6 class="bold-font sm-heading">Data Recovery</h6>
-          <p class="paragraph-text">
+          <h6 class="bold-text sm-heading">Data Recovery</h6>
+          <p class="light-text tiny-text slim-text">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             adipisicing elit
           </p>
@@ -233,12 +249,14 @@
     </section>
 
     <section class="popular-section container">
-      <h5 class="lg-heading bold-font text-center mb-5">Popular Repairs</h5>
+      <h5 class="lg-heading bold-text text-center mb-4 mb-md-5 mb-lg-5 mb-xl-5">
+        Popular Repairs
+      </h5>
       <div class="popular-items">
         <div
           class="popular-item px-5 py-4 d-flex flex-column gap-3 align-items-center"
         >
-          <h5 class="sm-heading bold-font">iPhone 14 Pro Max</h5>
+          <h5 class="sm-heading bold-text text-center">iPhone 14 Pro Max</h5>
 
           <button class="btn btn-outline-dark rounded-pill mb-3 btn-sm px-3">
             Learn More
@@ -250,7 +268,9 @@
         <div
           class="popular-item px-5 py-4 d-flex flex-column gap-3 align-items-center"
         >
-          <h5 class="sm-heading bold-font">Samsung Galaxy S23 Ultra</h5>
+          <h5 class="sm-heading bold-text text-center">
+            Samsung Galaxy S23 Ultra
+          </h5>
 
           <button class="btn btn-outline-dark rounded-pill mb-3 btn-sm px-3">
             Learn More
@@ -262,7 +282,7 @@
         <div
           class="popular-item px-5 py-4 d-flex flex-column gap-3 align-items-center"
         >
-          <h5 class="sm-heading bold-font">iPad Pro 9</h5>
+          <h5 class="sm-heading bold-text text-center">iPad Pro 9</h5>
 
           <button class="btn btn-outline-dark rounded-pill mb-3 btn-sm px-3">
             Learn More
@@ -274,7 +294,7 @@
         <div
           class="popular-item px-5 py-4 d-flex flex-column gap-3 align-items-center"
         >
-          <h5 class="sm-heading bold-font">MacBook Air 2023</h5>
+          <h5 class="sm-heading bold-text text-center">MacBook Air 2023</h5>
 
           <button class="btn btn-outline-dark rounded-pill mb-3 btn-sm px-3">
             Learn More
@@ -284,6 +304,14 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="mobile-repair-section container">
+      <h5 class="lg-heading bold-text text-center mb-4 mb-md-5 mb-lg-5 mb-xl-5">
+        Mobile Repairs
+      </h5>
+
+      <div class="filters"></div>
     </section>
 
     <!-- bootstrap cdn -->

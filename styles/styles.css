@@ -5,7 +5,8 @@
   --dark-color: #081c15;
   --background-color: #ffffff;
   --background-light: #ececec;
-  --text-light: #777373;
+  --light-text: #777373;
+  --tiny-text: 0.8rem;
   --tiny-heading: 0.9rem;
   --sm-heading: 1rem;
   --md-heading: 1.5rem;
@@ -27,6 +28,13 @@ body {
   font-weight: 500 !important;
 }
 
+/* Font Color & Sizes
+________________________________________________________________ */
+
+.tiny-text {
+  font-size: var(--tiny-text);
+}
+
 .tiny-heading {
   font-size: var(--tiny-heading);
 }
@@ -43,6 +51,25 @@ body {
   font-size: var(--lg-heading);
   font-weight: 700 !important;
 }
+
+.light-text {
+  color: var(--light-text);
+}
+
+.bold-text {
+  font-weight: 700 !important;
+}
+
+.slim-text {
+  font-weight: 400 !important;
+}
+
+.sm-heading {
+  font-size: 0.9rem;
+}
+
+/* Navbar
+__________________________________________________________ */
 
 nav {
   /* soft box-shadow */
@@ -110,28 +137,19 @@ nav {
   position: relative;
 }
 
+/* Hero Slider
+____________________________________________________ */
+
 .hero-slider {
   margin: 6.5rem auto;
   position: relative;
-}
-
-.paragraph-text {
-  color: var(--text-light);
-}
-
-.bold-font {
-  font-weight: 700 !important;
-}
-
-.sm-heading {
-  font-size: 0.9rem;
 }
 
 .slider {
   overflow: hidden;
 }
 
-.slide {
+.slide-section {
   border-radius: 1.5rem;
   background-image: url("https://assets.website-files.com/64343e4cc1aec6287d05a6e4/64354f7c5efcf20642d3bf47_thisisengineering-raeng-IpTPp_aPbYE-unsplash%201%20(1).webp");
   background-size: cover;
@@ -160,8 +178,8 @@ nav {
 
 .slider-navigation {
   position: absolute;
-  left: -0.3rem;
-  right: -0.3rem;
+  left: -0.8rem;
+  right: -0.8rem;
   /* center vertically  */
   top: 50%;
   transform: translateY(-50%);
@@ -192,6 +210,9 @@ nav {
   transform: scale(0.9);
 }
 
+/* Service Row
+_________________________________________________________ */
+
 .service-room {
   display: grid;
   gap: 1rem;
@@ -208,6 +229,9 @@ nav {
   width: 2.5rem;
   /* border: 1px solid black; */
 }
+
+/* Popular Repair section
+_____________________________________________________________ */
 
 .popular-section {
   margin: 6.5rem auto;
@@ -238,6 +262,7 @@ nav {
 
 .popular-item {
   border-radius: 1.5rem;
+  height: 28rem;
 }
 
 .popular-item > button {
@@ -245,4 +270,61 @@ nav {
   box-shadow: 0 0 0 2px transparent !important;
   outline: 2.5px dotted var(--dark-color) !important;
   font-weight: 700;
+}
+
+/* Mobile Repair Section 
+_______________________________________________________ */
+
+.mobile-repair-section {
+  margin: 6.5rem auto;
+}
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 575.98px) {
+  .hero-slider,
+  .popular-section {
+    margin: 4rem auto;
+  }
+
+  .popular-item {
+    height: 28rem;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-slider,
+  .popular-section {
+    margin: 4rem auto;
+  }
+
+  .popular-item {
+    height: 28rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-slider,
+  .popular-section {
+    margin: 4rem auto;
+  }
+
+  .popular-item {
+    height: 24rem;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .popular-item {
+    height: 24rem;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+  .popular-item {
+    height: 26rem;
+  }
 }
