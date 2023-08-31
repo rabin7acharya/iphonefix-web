@@ -23,42 +23,17 @@ $(document).ready(function () {
   $(".tab:first").addClass("active");
   $(".content:first").addClass("active");
 
-  //   const slideContainer = $(".slider");
-  //   const slides = slideContainer.find(".slide");
-  //   const leftBtn = $(".left-btn");
-  //   const rightBtn = $(".right-btn");
+  $(".mega-dropdown-wrapper").hover(
+    function () {
+      //change its sibling's css
+      $(this).siblings().css("background-color", "#081c15");
+      $(this).siblings().css("color", "#fff");
+    },
 
-  //   let currentIndex = 0;
-
-  //   // Function to go to the next slide
-  //   function goToNextSlide() {
-  //     slides.eq(currentIndex).removeClass("active");
-  //     currentIndex = (currentIndex + 1) % slides.length;
-  //     slides.eq(currentIndex).addClass("active");
-  //   }
-
-  //   // Function to go to the previous slide
-  //   function goToPreviousSlide() {
-  //     slides.eq(currentIndex).removeClass("active");
-  //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  //     slides.eq(currentIndex).addClass("active");
-  //   }
-
-  //   // Attach click event handlers to navigation buttons
-  //   leftBtn.click(goToPreviousSlide);
-  //   rightBtn.click(goToNextSlide);
-
-  //tabbed pane
-  //   $(".tab").click(function () {
-  //     $(".tab").removeClass("active");
-  //     $(this).addClass("active");
-
-  //     var tabIndex = $(this).index();
-  //     $(".content").removeClass("active");
-  //     $(".content:eq(" + tabIndex + ")").addClass("active");
-  //   });
-
-  //   // Set the initial active tab and content
-  //   $(".tab:first").addClass("active");
-  //   $(".content:first").addClass("active");
+    function () {
+      // Reset the sibling's CSS when the mouse leaves
+      $(this).siblings().css("background-color", "initial");
+      $(this).siblings().css("color", "initial");
+    }
+  );
 });

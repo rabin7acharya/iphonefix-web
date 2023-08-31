@@ -95,6 +95,7 @@ nav {
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   background-color: var(--background-color);
   position: relative;
+  border-bottom: 1px solid var(--background-light);
 }
 
 .btn {
@@ -110,7 +111,6 @@ nav {
 
 .nav-link {
   display: inline-block;
-  position: relative;
   cursor: pointer;
 }
 
@@ -132,6 +132,59 @@ nav {
   color: var(--background-color);
   background-color: var(--dark-color);
   font-weight: 500 !important;
+}
+
+.mega-parent {
+  position: relative;
+}
+
+.mega-dropdown-wrapper {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 24px;
+}
+
+.connector {
+  height: 32px;
+  width: 100%;
+  z-index: 0;
+}
+
+.mega-dropdown {
+  background-color: var(--background-color);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.045);
+  z-index: 11;
+  /* border except top  */
+  border-left: 1px solid var(--background-light);
+  border-right: 1px solid var(--background-light);
+  border-bottom: 1px solid var(--background-light);
+}
+
+.mega:hover .mega-dropdown-wrapper,
+.mega:hover .mega-dropdown {
+  display: flex;
+}
+
+.mega:hover > a,
+.mega-dropdown:hover .nav-link > a {
+  color: var(--background-color) !important;
+  background-color: var(--dark-color) !important;
+}
+
+.sub-menu > a {
+  color: var(--light-text);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  background-color: transparent !important;
+}
+
+.sub-menu > a:hover {
+  color: var(--dark-color);
+  background-color: transparent !important;
 }
 
 .ham-menu {
