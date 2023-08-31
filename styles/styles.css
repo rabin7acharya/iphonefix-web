@@ -68,6 +68,25 @@ ________________________________________________________________ */
   font-size: 0.9rem;
 }
 
+/* Button Styles 
+____________________________________________________ */
+
+.btn:focus,
+.btn:active,
+.btn:visited,
+.btn:focus-within,
+.btn:focus-visible,
+.btn:target {
+  border: none !important;
+}
+
+.btn-dotted {
+  border: none;
+  box-shadow: 0 0 0 2px transparent !important;
+  outline: 2.5px dotted var(--dark-color) !important;
+  font-weight: 700;
+}
+
 /* Navbar
 __________________________________________________________ */
 
@@ -265,18 +284,68 @@ _____________________________________________________________ */
   height: 28rem;
 }
 
-.popular-item > button {
+/* Mobile Repair Section 
+_______________________________________________________ */
+
+.mobile-repair-section {
+  margin: 6.5rem auto;
+}
+
+.filters {
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filters::-webkit-scrollbar {
+  width: 0;
+  /* Chrome/Safari/Webkit */
+  height: 0;
+  /* Firefox */
+}
+
+.mobile-repair-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* select first child  */
+.mobile-repair-grid > div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.repair-item {
+  background-color: var(--background-light);
+  border-radius: 2rem;
+}
+
+/* tab 
+______________________________________________ */
+/* .tab {
+  border-radius: 50rem;
+  padding: 0.9rem 1.6rem;
+  cursor: pointer;
+  color: var(--text-color-light);
+} */
+
+.tab.active {
   border: none;
   box-shadow: 0 0 0 2px transparent !important;
   outline: 2.5px dotted var(--dark-color) !important;
   font-weight: 700;
 }
 
-/* Mobile Repair Section 
-_______________________________________________________ */
+.content {
+  display: none;
+}
 
-.mobile-repair-section {
-  margin: 6.5rem auto;
+.content.active {
+  display: grid;
 }
 
 /* Extra small devices (portrait phones) */
@@ -288,6 +357,21 @@ _______________________________________________________ */
 
   .popular-item {
     height: 28rem;
+  }
+
+  .mobile-repair-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .mobile-repair-grid > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .repair-item {
+    border-radius: 1.5rem;
   }
 }
 
@@ -301,6 +385,17 @@ _______________________________________________________ */
   .popular-item {
     height: 28rem;
   }
+
+  .mobile-repair-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .mobile-repair-grid > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -313,6 +408,17 @@ _______________________________________________________ */
   .popular-item {
     height: 24rem;
   }
+
+  .mobile-repair-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .mobile-repair-grid > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 /* Large devices (desktops) */
@@ -320,11 +426,29 @@ _______________________________________________________ */
   .popular-item {
     height: 24rem;
   }
+
+  .mobile-repair-grid {
+    grid-template-columns: auto auto auto;
+  }
+
+  .mobile-repair-grid > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 }
 
 /* Extra large devices (large desktops) */
 @media (min-width: 1200px) {
   .popular-item {
     height: 26rem;
+  }
+
+  .mobile-repair-grid > div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
 }
