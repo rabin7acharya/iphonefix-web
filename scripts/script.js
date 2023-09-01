@@ -36,4 +36,23 @@ $(document).ready(function () {
       $(this).siblings().css("color", "initial");
     }
   );
+
+  $(".toggle-accordion").click(function () {
+    var accordionContent = $(this).next(".accordion-content");
+    var accordionArrow = $(this).find(".accordion-arrow");
+
+    // Check if the clicked accordion is already open
+    if (accordionContent.is(":visible")) {
+      accordionContent.slideUp();
+      accordionArrow.removeClass("open");
+    } else {
+      // Close all open accordions
+      $(".accordion-content").slideUp();
+      $(".accordion-arrow").removeClass("open");
+
+      // Open the clicked accordion
+      accordionContent.slideDown();
+      accordionArrow.addClass("open");
+    }
+  });
 });

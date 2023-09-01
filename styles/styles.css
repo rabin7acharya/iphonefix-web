@@ -117,7 +117,7 @@ nav {
 .nav-link a {
   color: var(--text-color);
   font-weight: 500;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.6rem;
 
   text-decoration: none;
   border-radius: 50rem;
@@ -182,7 +182,8 @@ nav {
   background-color: transparent !important;
 }
 
-.sub-menu > a:hover {
+.sub-menu > a:hover,
+.footer-section a:hover {
   color: var(--dark-color);
   background-color: transparent !important;
 }
@@ -414,14 +415,57 @@ _______________________________________________________ */
   background-size: cover;
 }
 
+/* FAQ Section 
+_________________________________________________________ */
+
+.faq-section {
+  margin: 6.5rem auto;
+}
+
+.accordin {
+  overflow: hidden;
+  background-color: var(--background-light);
+  border-radius: 1rem;
+}
+
+.toggle-accordion {
+  cursor: pointer;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-arrow.open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+}
+
+/* Footer 
+_________________________________________________________ */
+
+.footer-section {
+  border-top: 1px solid var(--background-light);
+  border-bottom: 1px solid var(--background-light);
+}
+
+.footer-section a {
+  color: var(--light-text);
+}
+
 /* media query */
 /* Extra small devices (portrait phones) */
 /* __________________________________________________________________________________________ */
+
 @media (max-width: 575.98px) {
   .hero-slider,
   .popular-section,
   .mobile-repair-section,
-  .banner-section > .container {
+  .banner-section > .container,
+  .faq-section {
     margin: 4rem auto;
   }
 
@@ -443,6 +487,12 @@ _______________________________________________________ */
   .repair-item {
     border-radius: 1rem;
   }
+
+  .footer-section .first,
+  .footer-section .second,
+  .footer-section .third {
+    border-bottom: 1px solid var(--background-light);
+  }
 }
 
 /* Small devices (landscape phones) */
@@ -450,7 +500,8 @@ _______________________________________________________ */
   .hero-slider,
   .popular-section,
   .mobile-repair-section,
-  .banner-section > .container {
+  .banner-section > .container,
+  .faq-section {
     margin: 4rem auto;
   }
 
@@ -468,6 +519,12 @@ _______________________________________________________ */
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  .footer-section .first,
+  .footer-section .second,
+  .footer-section .third {
+    border-bottom: 1px solid var(--background-light);
+  }
 }
 
 /* Medium devices (tablets) */
@@ -475,7 +532,8 @@ _______________________________________________________ */
   .hero-slider,
   .popular-section,
   .mobile-repair-section,
-  .banner-section > .container {
+  .banner-section > .container,
+  .faq-section {
     margin: 4rem auto;
   }
 
@@ -492,6 +550,11 @@ _______________________________________________________ */
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+  }
+
+  .footer-section .first,
+  .footer-section .third {
+    border-right: 1px solid var(--background-light);
   }
 }
 
@@ -511,6 +574,12 @@ _______________________________________________________ */
     grid-row-start: 1;
     grid-row-end: 2;
   }
+
+  .footer-section .first,
+  .footer-section .second,
+  .footer-section .third {
+    border-right: 1px solid var(--background-light);
+  }
 }
 
 /* Extra large devices (large desktops) */
@@ -524,5 +593,11 @@ _______________________________________________________ */
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+  }
+
+  .footer-section .first,
+  .footer-section .second,
+  .footer-section .third {
+    border-right: 1px solid var(--background-light);
   }
 }
