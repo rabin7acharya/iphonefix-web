@@ -224,6 +224,7 @@ ____________________________________________________ */
 .slide-section {
   border-radius: 1.5rem;
   background-image: url("https://assets.website-files.com/64343e4cc1aec6287d05a6e4/64354f7c5efcf20642d3bf47_thisisengineering-raeng-IpTPp_aPbYE-unsplash%201%20(1).webp");
+
   background-size: cover;
   background-position: center;
   padding: 5rem 3rem;
@@ -244,7 +245,7 @@ ____________________________________________________ */
   /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
 
-.slide button {
+button {
   font-weight: 500 !important;
 }
 
@@ -401,10 +402,26 @@ ______________________________________________ */
   display: grid;
 }
 
+/* Banner Section 
+_______________________________________________________ */
+.banner-section > .container {
+  margin: 6.5rem auto;
+  border-radius: 2rem;
+  height: 72vh;
+
+  background-image: url("https://www.apple.com/v/iphone/home/bo/images/overview/subhero/guided_tour__c40f88on9o8y_large_2x.jpg");
+  background-color: #000000;
+  background-size: cover;
+}
+
+/* media query */
 /* Extra small devices (portrait phones) */
+/* __________________________________________________________________________________________ */
 @media (max-width: 575.98px) {
   .hero-slider,
-  .popular-section {
+  .popular-section,
+  .mobile-repair-section,
+  .banner-section > .container {
     margin: 4rem auto;
   }
 
@@ -424,14 +441,16 @@ ______________________________________________ */
   }
 
   .repair-item {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
   }
 }
 
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hero-slider,
-  .popular-section {
+  .popular-section,
+  .mobile-repair-section,
+  .banner-section > .container {
     margin: 4rem auto;
   }
 
@@ -454,7 +473,9 @@ ______________________________________________ */
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-slider,
-  .popular-section {
+  .popular-section,
+  .mobile-repair-section,
+  .banner-section > .container {
     margin: 4rem auto;
   }
 
