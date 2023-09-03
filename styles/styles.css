@@ -485,6 +485,48 @@ _________________________________________________________ */
   height: 10rem;
 }
 
+.breadcrum > h5 {
+  white-space: nowrap;
+}
+
+/*Repair section
+_________________________________________________________ */
+
+.repair-section {
+  margin: 6.5rem auto;
+}
+
+.repair-banner {
+  background-color: var(--background-light);
+  border-radius: 2rem;
+}
+
+.specs-card {
+  border-bottom: dotted var(--light-text);
+  border-width: 2px;
+}
+
+.specs-icon {
+  /* border: 1px solid black; */
+  min-width: 3rem;
+  height: 3rem !important;
+}
+
+.specs-icon > img {
+  height: 2.5rem;
+}
+
+.repair-specs-section {
+  margin: 6.5rem auto;
+  /* background-color: var(--background-light); */
+  border-radius: 2rem;
+}
+
+/* last child  */
+
+.repair-specs-section > div:last-child {
+  border-bottom: none;
+}
 /* media query */
 /* Extra small devices (portrait phones) */
 /* __________________________________________________________________________________________ */
@@ -494,7 +536,10 @@ _________________________________________________________ */
   .popular-section,
   .mobile-repair-section,
   .banner-section > .container,
-  .faq-section {
+  .faq-section,
+  .contact-section,
+  .repair-section,
+  .repair-specs-section {
     margin: 5rem auto;
   }
 
