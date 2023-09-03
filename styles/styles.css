@@ -446,7 +446,7 @@ _________________________________________________________ */
 
 .footer-section {
   border-top: 1px solid var(--background-light);
-  border-bottom: 1px solid var(--background-light);
+  /* border-bottom: 1px solid var(--background-light); */
 }
 
 .footer-section a {
@@ -474,16 +474,6 @@ _________________________________________________________ */
   row-gap: 1rem;
   column-gap: 0.8rem;
   /* gap: 1.5rem; */
-}
-
-.form-element > input,
-.form-element > textarea,
-.dropdown-options {
-  /* background-color: var(--background-light); */
-
-  /* decrease size of placeholder text  */
-  /* font-size: 1rem; */
-  /* padding: 1rem 1.5rem; */
 }
 
 .form-input > div:last-child {
