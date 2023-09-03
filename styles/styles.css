@@ -384,12 +384,6 @@ _______________________________________________________ */
 
 /* tab 
 ______________________________________________ */
-/* .tab {
-  border-radius: 50rem;
-  padding: 0.9rem 1.6rem;
-  cursor: pointer;
-  color: var(--text-color-light);
-} */
 
 .tab.active {
   border: none;
@@ -459,6 +453,48 @@ _________________________________________________________ */
   color: var(--light-text);
 }
 
+/*service brand page
+_________________________________________________________ */
+
+.search-bar,
+.search-bar input {
+  background-color: var(--background-light);
+}
+
+/*contact section 
+_________________________________________________________ */
+
+.contact-section {
+  margin: 6.5rem auto;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 0.8rem;
+  /* gap: 1.5rem; */
+}
+
+.form-element > input,
+.form-element > textarea,
+.dropdown-options {
+  /* background-color: var(--background-light); */
+
+  /* decrease size of placeholder text  */
+  /* font-size: 1rem; */
+  /* padding: 1rem 1.5rem; */
+}
+
+.form-input > div:last-child {
+  grid-column: 1 / -1;
+}
+
+.form-input > div:last-child > textarea {
+  border-radius: 1rem;
+  height: 10rem;
+}
+
 /* media query */
 /* Extra small devices (portrait phones) */
 /* __________________________________________________________________________________________ */
@@ -469,7 +505,7 @@ _________________________________________________________ */
   .mobile-repair-section,
   .banner-section > .container,
   .faq-section {
-    margin: 4rem auto;
+    margin: 5rem auto;
   }
 
   .popular-item {
@@ -491,6 +527,10 @@ _________________________________________________________ */
     border-radius: 1rem;
   }
 
+  .form-input {
+    grid-template-columns: auto;
+  }
+
   .footer-section .first,
   .footer-section .second,
   .footer-section .third {
@@ -505,7 +545,7 @@ _________________________________________________________ */
   .mobile-repair-section,
   .banner-section > .container,
   .faq-section {
-    margin: 4rem auto;
+    margin: 5rem auto;
   }
 
   .popular-item {
@@ -537,7 +577,7 @@ _________________________________________________________ */
   .mobile-repair-section,
   .banner-section > .container,
   .faq-section {
-    margin: 4rem auto;
+    margin: 5rem auto;
   }
 
   .popular-item {
