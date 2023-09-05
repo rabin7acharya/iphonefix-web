@@ -477,7 +477,7 @@ _________________________________________________________ */
 }
 
 .form-input > div:last-child {
-  grid-column: 1 / -1;
+  grid-column: 1 / 3;
 }
 
 .form-input > div:last-child > textarea {
@@ -527,6 +527,16 @@ _________________________________________________________ */
 .repair-specs-section > div:last-child {
   border-bottom: none;
 }
+
+.element {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.element label {
+  border: 1px solid #dee2e6 !important;
+}
+
 /* media query */
 /* Extra small devices (portrait phones) */
 /* __________________________________________________________________________________________ */
