@@ -551,9 +551,9 @@ _________________________________________________________ */
   color: var(--background-color);
 }
 
-/* .info-box {
-  border-bottom: 1px solid var(--light-text);
-} */
+.info-box {
+  border-bottom: 2px dotted var(--light-text);
+}
 
 /* media query */
 /* Extra small devices (portrait phones) */
